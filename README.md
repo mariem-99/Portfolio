@@ -2,7 +2,7 @@
 
 A modern, responsive portfolio website built with React and Vite, featuring a professional green theme with smooth animations and interactive components.
 
-![Portfolio Preview](screenshot.png)
+![Portfolio Preview]("C:\Users\MSI\Downloads\overview.png")
 
 ## 👤 About Me
 
