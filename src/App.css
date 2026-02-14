@@ -1,0 +1,30 @@
+.App{
+  /* remove default margin and padding */
+  margin:0;
+  padding:0;
+
+  /*set a minimum height to cover the entire viewport*/
+  min-height:100vh; /*makes the app at least full screen height (vh = viewport height)*/
+  /*light background color for better contrast with text*/
+  background-color: #f8f9fa;
+}
+
+html{
+  /* enable smooth scrolling for anchor links */
+  scroll-behavior: smooth;
+}
+
+/*Reset body margins*/
+body{
+  margin:0;
+  padding:0;
+  /*use system fonts for better performance and consistency across platforms*/
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans','Droid Sans', 'Helvetica Neue', sans-serif;
+  /* Makes text look crisper and slightly thinner on Mac screens  */
+  /* macOS font smoothing fixes:
+  Prevents fonts from looking too thick/bold, 
+  especially helpful for light text on dark backgrounds.*/
+  -webkit-font-smoothing: antialiased; /* makes text look crisp on different browsers*/
+  -moz-osx-font-smoothing: grayscale;
+
+}

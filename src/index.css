@@ -1,0 +1,29 @@
+/*index.css - global reset and base styles*/
+* {
+  /* box-sizing makes width calculation easier */
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*remove list bullets globaly*/
+ul{
+  list-style: none;
+}
+
+/*make images responsive by default*/
+img{
+  max-width: 100%; /*prevents images from overflowing their containers*/
+  height: auto;
+  display: block; /* removes extra space below images */
+}
+
+/*remove default link styles*/
+a{
+  text-decoration: none;
+  color: inherit; /* inherit color from parent element */
+}
+/*these are reset styles to ensure a consistent baseline across browsers.
+They remove default margins, padding, and set a consistent box-sizing model.
+The styles for body and html ensure that the app takes up the full viewport height and has a clean, 
+modern look with a light background and smooth font rendering.*/

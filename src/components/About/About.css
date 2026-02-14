@@ -1,0 +1,113 @@
+.about {
+  padding: 5rem 2rem;
+  background-color: white;
+}
+
+.about-content {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  color: #2d6a4f;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+/* Decorative underline */
+.section-title::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60%;
+  height: 4px;
+  background: linear-gradient(to right, #52b788, #2d6a4f);
+  border-radius: 2px;
+}
+
+.profile-image {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%; /* Makes it circular */
+  margin: 2rem auto;
+  object-fit: cover; /* Ensures image covers area without distortion */
+  border: 5px solid #3f8a67;
+  box-shadow: 0 10px 30px rgba(45, 106, 79, 0.2);
+  transition: transform 0.3s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05); /* Slightly enlarges on hover */
+}
+
+.bio-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #333;
+  margin: 2rem 0;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.skills-section {
+  margin-top: 3rem;
+}
+
+.skills-title {
+  font-size: 1.8rem;
+  color: #2d6a4f;
+  margin-bottom: 1.5rem;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 0;
+  list-style: none;
+}
+
+.skill-item {
+  background: linear-gradient(135deg, #d8f3dc 0%, #b7e4c7 100%);
+  color: #1b4332;
+  padding: 0.75rem 1.5rem;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 0.95rem;
+  
+  /* Shadow for depth */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+  /* Animation */
+  transition: all 0.3s ease;
+}
+
+.skill-item:hover {
+  background: linear-gradient(135deg, #52b788 0%, #40916c 100%);
+  color: white;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 1rem;
+  }
+  
+  .section-title {
+    font-size: 2rem;
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+  }
+}

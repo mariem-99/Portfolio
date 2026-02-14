@@ -1,0 +1,97 @@
+.contact {
+  padding: 5rem 2rem;
+  background: linear-gradient(135deg, #2d6a4f 0%, #40916c 100%);
+  color: white;
+}
+
+.contact-content {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.contact .section-title {
+  color: white;
+  margin-bottom: 1rem;
+}
+
+/* Override the ::after from About section */
+.contact .section-title::after {
+  background: linear-gradient(to right, #b7e4c7, white);
+}
+
+.contact-intro {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  opacity: 0.95;
+}
+
+.contact-methods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.contact-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 2rem;
+  border-radius: 12px;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+  text-decoration: none;
+  color: white;  /* ← ADDED THIS */
+  display: block;  /* ← ADDED THIS */
+}
+
+.contact-item:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.contact-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.contact-label {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+}
+
+.contact-value {
+  font-size: 0.95rem;
+  opacity: 0.9;
+  word-break: break-word;
+  margin-bottom: 1rem;  /* ← ADDED THIS */
+}
+
+.contact-action {
+  display: inline-block;
+  color: #52b788;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.contact-item:hover .contact-action {
+  transform: translateX(10px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .contact {
+    padding: 3rem 1rem;
+  }
+  
+  .contact-methods {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
